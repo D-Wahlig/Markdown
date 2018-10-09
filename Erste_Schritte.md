@@ -105,6 +105,8 @@ Bsp. :
 
 ##Bild
 
+Ein Bild funktioniert wie ein Link nur dass es mit einem ! eingeleitet wird.
+
 ![Markdown Logo](https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg "Markdown-Logo")
 
 -------------
