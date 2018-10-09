@@ -1,16 +1,16 @@
-#Markdown
+# Markdown
 
 Markdown ist keine eigene Sprache, hat aber ähnlichkeiten zu Programmiersprachen. Während die "Sprache" in Markdown beliebig ist gibt es Formatierungssyntaxe die unikat sind. Dabei ist die oberste Priorität von Markdown, Leserlichkeit. Es soll von jedem, der die gleiche Sprache spricht, gelesen und verstanden werden können ohne dass dieser von Klammern, Befehlen und Kommandos überflutet wird.  
 
 ---
 
-##Horizontale Linien
+## Horizontale Linien
 
 Mit mindestens 3 -(also ---) kann man eine horizontale Linie erstellen, dabei gibt es kein maximum wie viele "-" man macht. Man kann statt - auch * verwenden.
 
 
 
-##Text
+## Text
 
 Text wird einfach geschrieben, wobei es die Möglichkeit gibt HTML Tags zur Textdarstellung zu verwenden.  
 Zwei Leerzeichen für einen Zeilenumbruch.  Aber nur am Ende einer Zeile...  
@@ -23,7 +23,7 @@ Mit dem \\ kann man einzelne Symbole escapen, muss mir noch einfallen wie das au
 
 ----------------
 
-##Zitate
+## Zitate
 
 >Zitate werden mit einem ">" eingeleitet.  
 Man muss nichtmahl für jede Zeile ein eigenes machen sondern nur für das Erste.
@@ -34,7 +34,7 @@ Man muss nichtmahl für jede Zeile ein eigenes machen sondern nur für das Erste
 
 --------------------
 
-##Ungeordnete Liste
+## Ungeordnete Liste
 
 Bei ungeordneten Listen wird nur ein Aufzählungszeichen verwendet. Man leitet eine ungeordnete Liste mit *, + oder - ein.
 
@@ -46,7 +46,7 @@ Bei ungeordneten Listen wird nur ein Aufzählungszeichen verwendet. Man leitet e
 
 -------------
 
-##Geordnete Liste
+## Geordnete Liste
 
 Bei geordneten Listen werden die Aufzählungen nummeriert. Dabei ist es egal welche Zahlenfolge verwendet wird, wichtig ist aber eine Zahl mit Punkt zu schreiben.  
   
@@ -59,7 +59,7 @@ Bei geordneten Listen werden die Aufzählungen nummeriert. Dabei ist es egal wel
 
 ---------------
 
-##Code Blöcke
+## Code Blöcke
 
 Code Blöcke werden durch eine Einrückung von 4 Leerzeilen oder einem Tab eingeleitet.
 
@@ -71,7 +71,7 @@ Zumindest solange man die Einrückung beachtet...
 
 ------------
 
-##Überschriften
+## Überschriften
 
 Überschriften werden per Doppelkreuz eingeleitet, dabei gibt die Anzahl der Doppelkreuze die Ebene der Überschrift an:
 
@@ -95,7 +95,7 @@ Zumindest solange man die Einrückung beachtet...
 
 -------------------
 
-##HTML Tags
+## HTML Tags
 
 Man kann HTML Tags in Markdown verwenden. Sie haben den gleichen Syntax:
 
@@ -106,7 +106,7 @@ Man kann HTML Tags in Markdown verwenden. Sie haben den gleichen Syntax:
  
 ---------
 
-##Links
+## Links
 
 Es gibt zwei Arten von Links:
 
@@ -131,7 +131,7 @@ Bsp. :
 
 ---------------------
 
-##Bild
+## Bild
 
 Ein Bild funktioniert wie ein Link nur dass es mit einem ! eingeleitet wird.
 
