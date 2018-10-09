@@ -16,6 +16,18 @@ Mit dem \\ kann man einzelne Symbole escapen, muss mir noch einfallen wie das au
 
 
 ----------------
+
+##Zitate
+
+>Zitate werden mit einem ">" eingeleitet.  
+Man muss nichtmahl für jede Zeile ein eigenes machen sondern nur für das Erste.
+
+>Dennoch ist es eleganter es in JEDER Zeile zu machen.
+
+
+
+--------------------
+
 ##Ungeordnete Liste
 
 Bei ungeordneten Listen wird nur ein Aufzählungszeichen verwendet. Man leitet eine ungeordnete Liste mit *, + oder - ein.
@@ -40,6 +52,18 @@ Bei geordneten Listen werden die Aufzählungen nummeriert. Dabei ist es egal wel
 1. Geordneter Listenpunkt
 
 ---------------
+
+##Code Blöcke
+
+Code Blöcke werden durch eine Einrückung von 4 Leerzeilen oder einem Tab eingeleitet.
+
+    Hier könnte Ihr Code stehen.
+    Es ist sogar Zeilenübergreifend
+
+Zumindest solange man die Einrückung beachtet...
+
+
+------------
 
 ##Überschriften
 
