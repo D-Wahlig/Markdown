@@ -110,8 +110,6 @@ Man kann HTML Tags in Markdown verwenden. Sie haben den gleichen Syntax:
 
 Es gibt zwei Arten von Links:
 
-Links und das andere Links.
-
 Inline
 
 Bei einem Inline Link schreibt man in [eckigen Klammern] die Bezeichnung des Links und in (runden Klammern) die URL und optional in "Anführungszeichen" den Titel, wenn man mit der Maus über den Link fährt.
@@ -122,7 +120,7 @@ Bsp. :
 
 und Referenzen
 
-Bei referenzen wird auf eine ID verwiesen unter welcher der Link zu finden ist.
+Bei Referenzen wird auf eine ID verwiesen unter welcher der Link zu finden ist.
 
 Bsp. :
 
@@ -137,9 +135,12 @@ Bsp. :
 
 Ein Bild funktioniert wie ein Link nur dass es mit einem ! eingeleitet wird.
 
-![Markdown Logo](https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg "Markdown-Logo")
+
+![Markdown Logo](https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg)
 
 -------------
 
 
-
+```python
+print("foobar")
+```
