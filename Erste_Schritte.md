@@ -2,7 +2,14 @@
 
 Markdown ist keine eigene Sprache, hat aber ähnlichkeiten zu Programmiersprachen. Während die "Sprache" in Markdown beliebig ist gibt es Formatierungssyntaxe die unikat sind. Dabei ist die oberste Priorität von Markdown, Leserlichkeit. Es soll von jedem, der die gleiche Sprache spricht, gelesen und verstanden werden können ohne dass dieser von Klammern, Befehlen und Kommandos überflutet wird.  
 
-------
+---
+
+##Horizontale Linien
+
+Mit mindestens 3 - kann man eine horizontale Linie erstellen, dabei gibt es kein maximum wie viele "-" man macht.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ##Text
 
