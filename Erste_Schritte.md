@@ -6,10 +6,9 @@ Markdown ist keine eigene Sprache, hat aber ähnlichkeiten zu Programmiersprache
 
 ##Horizontale Linien
 
-Mit mindestens 3 - kann man eine horizontale Linie erstellen, dabei gibt es kein maximum wie viele "-" man macht.
+Mit mindestens 3 -(also ---) kann man eine horizontale Linie erstellen, dabei gibt es kein maximum wie viele "-" man macht. Man kann statt - auch * verwenden.
 
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ##Text
 
