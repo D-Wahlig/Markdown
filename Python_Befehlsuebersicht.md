@@ -94,8 +94,32 @@ name(uebergabewert)                                     #Aufruf der Funktion mit
 
 ```
 
+### Iterativ
 
+Die Wiederholung wird von 1 nach n durchgeführt.
 
+```python
+n = 10
+
+for i in range(1, n):
+    print i
+
+```
+
+### Rekursiv
+
+Die Wiederholung wird von n nach 1 durchgeführt.
+
+```python
+n = 10
+
+def func(n):
+    if n < 2:
+        return 1
+
+    return fib(n - 1) + fib(n - 2)
+
+print fib(n)
 
 
 
