@@ -3,12 +3,20 @@
 
 ## Textausgabe mit dem Befehl: print
 
+
+#### In Python 2
 ```python
 print "Hello World"
 print "Ergebnis: %d" % int1
 print Ergebnis: %f" % float1
 
 ```
+
+#### In Python 3
+```python
+print ("Hello World")
+print (f"Ergebnis: {int1}")
+
 
 ---
 
@@ -33,7 +41,7 @@ del a #löscht Variable a
 **Wichtig!**  
 Variablen dürfen nicht mit einer Zahl beginnen.  
 Variablen dürfen keine Sonderzeichen beinhalten.  
-Variablen dürfen nicht nach Funktionen benannt werden.  
+Variablen dürfen nicht nach Befehlen benannt werden.  
 True **ODER** False sollten keine Werte zugewiesen werden auch wenn es möglich ist.  
 Im interaktiven Modus sollte quit nicht als Variablenname verwendet werden und keine Funktion mit dem Namen quit() angelegt werden.  
 
@@ -121,8 +129,69 @@ def func(n):
 
 print fib(n)
 
+```
+
+---
+
+## Datenstrukturen
+
+### Liste
+
+```python
+a = []                                          #Leere Liste
+a = [1, 2.1,"a"]                                
+
+```
+
+Frei veränderbarer Inhalt mit festem Index.
+Kann mit .append() erweitert werden.
 
 
+### Tuple
+
+```python
+a = 1, 2.3, "a"
+
+```
+
+Lässt seine Werte, nach der Erstellung, nicht verändern, nur anfügen.
+
+
+### Dict
+
+```python
+a = {"key" : "value", "key2" : "value2"}
+
+```
+
+Frei veränderbarer Inhalt mit variablem Index.
+
+### Set
+
+```python
+a = {1, 2, 3}
+b = {3, 4, 5}
+
+a - b                   #{1, 2}
+
+a & b                   #{3}
+
+a | b                   #{1, 2, 3, 4, 5}
+
+```
+Kann verwendet werden, um Dopplungen aus Listen zu entfernen.
+
+Unveränderbarer Inhalt ohne Index.
+
+
+#### Unterschiede
+
+Eine Liste kann man verändern mit:
+a[n] = Wert                             #n steht hier als Platzhalter für einen existierenden Index
+
+Bei Tuplen und sets kommt hiereine Fehlermeldung
+
+Der .append Befehl funktioniert nur bei Listen.
 
 
 
