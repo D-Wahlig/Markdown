@@ -1,7 +1,7 @@
 # Python Befehlsübersicht
 
 
-## Textausgabe mit dem Befehl: print
+### Textausgabe mit dem Befehl: print
 
 
 #### In Python 2
@@ -20,7 +20,7 @@ print (f"Ergebnis: {int1}")
 
 ---
 
-## Variablen und Datentypen
+### Variablen und Datentypen
 
 ```python
 a = 1                           #Ganzzahl
@@ -47,7 +47,10 @@ Im interaktiven Modus sollte quit nicht als Variablenname verwendet werden und k
 
 ---
 
-## if, elif und else
+
+## Kontrollstrukturen
+
+### if, elif und else
 
 ```python
 a = 10
@@ -67,7 +70,7 @@ else:                       #Sollte keine der oben stehenden Prüfungen wahr erg
 
 ```
 
-## for-Schleife
+### for-Schleife
 
 ```python
 a = [1,2,3,4,5,6,7,8,9,10]                              #Erstellen einer Liste mit 10 Inhalten
@@ -77,7 +80,7 @@ for number in a:                                        #Solange ein Wert in a s
                                                         #Nach 10 durchläufen endet die Schleife
 ```
 
-## while-Schleife
+### while-Schleife
 
 ```python
 a = 100                     #Festlegen von a
@@ -194,7 +197,41 @@ Bei Tuplen und sets kommt hiereine Fehlermeldung
 Der .append Befehl funktioniert nur bei Listen.
 
 
+## Command-line Arguments
 
+```python
+#!/usr/bin/env python3
+
+"""Hier steht der Text wenn -h 
+oder --help beim Aufruf angegeben wurde
+"""
+
+import argparse
+
+
+params = argparse.ArgumentParser(description = __doc__, formatter_class = argparse.RawDescriptionHelpFormatter)
+
+params.add_argument(-o, --option, action = 'store_true', dest = 'opt' help = 'Hier steht die Beschreibung des optionalen Argumentes')
+
+params.add_argument('command', action = 'store', help = 'Hier steht die Beschreibung des positionellen Argumentes')
+
+params.add_argument('optcommand', action = 'store', nargs = '?', help = 'Hier steht die Beschreibung des optionalen positionellen Argumentes')
+
+# Parsen der Kommandozeilen Argumente
+args = params.parse_args()
+
+```
+
+## Input
+
+```python
+words = sys.stdin.read()                #Standard Input wird gelesen und in words gespeichert
+
+
+words = open("file.txt", "r")           #file.txt wird zum lesen geöffnet 
+words = words.read()                    #Inhalt von file.txt wird in words gespeichert
+
+```
 
 
 

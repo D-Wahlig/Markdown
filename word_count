@@ -18,44 +18,83 @@ params.add_argument('-l',action = 'store_true', dest = 'lines',help='Show the am
 
 params.add_argument('-c', action = 'store_true', dest = 'chars', help = 'Shows the amount of characters')
 
+params.add_argument('file', action = 'store', nargs = '?', help = 'Optional argument to read from a file')
+
 # Parse the command line arguments
 args = params.parse_args()
 
 
-try: 
-    words = sys.stdin.read()                        #Input wird in words gespeichert 
-    a = 0                                           #Festlegen einer Variablen
-    
-    
-    if args.lines:                                  #Prüfung ob Option -l angegeben wurde
-        for i in words.splitlines():                #Auffteilung nach Zeilenumbruechen 
-        
-            a += 1                                  #wird a um 1 erhoeht
-        print(f"Der Text hat: {a} Zeilen.")         
-        
-    elif args.chars:                                #Prüfen ob Option -c angegeben wurde
-        
-        list(words)                                 #Input in eine Liste schreiben; Aufteilen jedes einzelnen Zeichens
-        
-        for i in words:                             
-            if i == " " or i == "\n" or i == "\t":  #Prüfen ob Leerzeichen, Zeilenumbrueche oder Einrueckungen vorhanden sind
-                a += 0                              #Wenn "Ja" wird a nicht erhoeht
+if args.file == None:
+    try: 
+        words = sys.stdin.read()                        #Input wird in words gespeichert         
+        a = 0                                           #Festlegen einer Variablen
+            
+            
+        if args.lines:                                  #Prüfung ob Option -l angegeben wurde
+            for i in words.splitlines():                #Auffteilung nach Zeilenumbruechen 
                 
-            else:
-                a += 1                              #Wenn "Sonst" wird a um 1 erhoeht
-        
-        print(f"Der Text hat: {a} Charaktere.")     
-    
-    else:
-        
-        for i in words.split():                     #Aufteilung nach Leerzeilen
+                a += 1                                  #wird a um 1 erhoeht
+            print(f"Der Text hat: {a} Zeilen.")         
+                
+        elif args.chars:                                #Prüfen ob Option -c angegeben wurde
+                
+            list(words)                                 #Input in eine Liste schreiben; Aufteilen jedes einzelnen Zeichens
+                
+            for i in words:                             
+                if i == " " or i == "\n" or i == "\t":  #Prüfen ob Leerzeichen, Zeilenumbrueche oder Einrueckungen vorhanden sind
+                    a += 0                              #Wenn "Ja" wird a nicht erhoeht
+                        
+                else:
+                    a += 1                              #Wenn "Sonst" wird a um 1 erhoeht
+                
+            print(f"Der Text hat: {a} Charaktere.")     
+            
+        else:
+                
+            for i in words.split():                     #Aufteilung nach Leerzeilen
 
-            a += 1
-        print(f"Der Text hat: {a} Woerter.")    
-    
-except Exception as exc:
-    print(str(exc) + '!')
-    exit(1)
-    
+                a += 1
+            print(f"Der Text hat: {a} Woerter.")    
+            
+    except FileNotFoundError:
+        print("Datei wurde nicht gefunden!")
+        exit(1)
+else:
+    try: 
+        words = open(args.file, "r")                    #Input wird in words gespeichert 
+        words = words.read()
+        a = 0                                           #Festlegen einer Variablen
+            
+            
+        if args.lines:                                  #Prüfung ob Option -l angegeben wurde
+            for i in words.splitlines():                #Auffteilung nach Zeilenumbruechen 
+                
+                a += 1                                  #wird a um 1 erhoeht
+            print(f"Der Text hat: {a} Zeilen.")         
+                
+        elif args.chars:                                #Prüfen ob Option -c angegeben wurde
+                
+            list(words)                                 #Input in eine Liste schreiben; Aufteilen jedes einzelnen Zeichens
+                
+            for i in words:                             
+                if i == " " or i == "\n" or i == "\t":  #Prüfen ob Leerzeichen, Zeilenumbrueche oder Einrueckungen vorhanden sind
+                    a += 0                              #Wenn "Ja" wird a nicht erhoeht
+                        
+                else:
+                    a += 1                              #Wenn "Sonst" wird a um 1 erhoeht
+                
+            print(f"Der Text hat: {a} Charaktere.")     
+            
+        else:
+                
+            for i in words.split():                     #Aufteilung nach Leerzeilen
+
+                a += 1
+            print(f"Der Text hat: {a} Woerter.")    
+            
+    except FileNotFoundError:
+        print("Datei wurde nicht gefunden!")
+        exit(2)
+
    
 exit(0) 
