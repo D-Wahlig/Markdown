@@ -1,0 +1,39 @@
+#!/bin/bash
+
+export PWP=/home/dwahlig/Documents/Markdown/geheimnisse.txt
+export EDITOR=vim
+
+open(){
+    ccrypt -c $PWP
+    }
+
+cutstr(){
+    cut -d " " -f 1
+    }
+
+ccrypt -e geheimnisse.txt
+    
+case $1 in
+    list)
+        open | cutstr
+        ;;
+    show)
+        open | grep $2 | cutstr
+        ;;
+    paste)
+        open | grep $2 | cutstr | xclip   
+        ;;
+    edit)
+        ccrypt -d $PWP; 
+        $EDITOR $PWP;
+        ccrypt -e $PWP
+        ;;
+    *)
+        echo "Order not understood, please try again"
+        ;;
+esac
+
+
+
+
+
